@@ -1,5 +1,8 @@
-h1= title
-p Welcome to #{title}
+div(data-role='page')
+  div(data-role='header')
+    h1 #{title}
+  div(data-role='content')
+    p Page content goes here.
+  div(data-role='footer')
+    h4 #{tm}
 
-main#main(role='main')
-script(data-main='/app/config', src='/vendor/js/libs/require.js')

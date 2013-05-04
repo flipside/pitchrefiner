@@ -4,5 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Pitch Refiner!' })
+  var tm = new Date(),
+      company = 'Pitch Refiner';
+  res.render('index', { title: company, tm: company + ' ' + tm.getFullYear() })
 };
