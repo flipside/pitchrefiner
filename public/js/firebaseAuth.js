@@ -11,6 +11,7 @@
       } else if (user) {
         // user authenticated with Firebase
         console.log('User ID: ' + user.id + ', Provider: ' + user.provider);
+        $.mobile.changePage('/create_or_rate');
       } else {
         // user is logged out
       }
