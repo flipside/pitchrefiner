@@ -3,20 +3,22 @@
  * GET home page.
  */
 
+var company = 'Pitch Refiner', 
+    today = new Date(),
+    tm = company + ' ' + today.getFullYear();
+
 exports.index = function(req, res){
-  var tm = new Date(),
-      company = 'Pitch Refiner';
-  res.render('index', { title: company, tm: company + ' ' + tm.getFullYear() })
+  res.render('index', { title: company, tm: tm })
 };
 
 exports.createOrRate = function(req, res){
-  var tm = new Date(),
-      company = 'Pitch Refiner';
-  res.render('create_or_rate', { title: company, tm: company + ' ' + tm.getFullYear() })
+  res.render('create_or_rate', { title: company, tm: tm })
 };
 
 exports.create = function(req, res){
-  var tm = new Date(),
-      company = 'Pitch Refiner';
-  res.render('create', { title: company, tm: company + ' ' + tm.getFullYear() })
+  res.render('create', { title: company, tm: tm })
+};
+
+exports.pitchConfig = function(req, res){
+  res.render('create', { title: company, tm: tm })
 };
