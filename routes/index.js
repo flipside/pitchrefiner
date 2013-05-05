@@ -22,3 +22,7 @@ exports.create = function(req, res){
 exports.pitchConfig = function(req, res){
   res.render('pitch_config', { title: company, tm: tm })
 };
+
+exports.configAudience = function(req, res){
+  res.render('config_audience', { title: company, tm: tm })
+};
