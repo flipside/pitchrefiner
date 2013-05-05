@@ -1,10 +1,12 @@
 {
-    "name": "application-name"
+    "name": "pitchrefiner"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
       "express": "2.5.8"
     , "jade": ">= 0.0.1"
-    , "firebase": "*"
+    , "underscore": ">= 1.4.4"
+    , "glicko2": ">= 0.5.7"
+    , "firebase": ">= 0.5.1"
   }
 }
