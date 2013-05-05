@@ -13,24 +13,25 @@ div(id='#{page_id}', data-role='page', data-add-back-btn='true')
               | to help A TARGET AUDIENCE
               | SOLVE A PROBLEM
               | WITH SECRET SAUNCE
-        li Invite Friends:
+        li Versions: 
           span
             form
               select( id='invite_friends', name='invite_friends', data-role='slider')
                 option(value='yes') Yes 
                 option(value='no') No 
-        li Make Public:
+        li Duration:
           span
             form
               select( id='make_public', name='make_public', data-role='slider')
                 option(value='yes') Yes 
                 option(value='no') No 
-        li Pay Feedback:
+        li Number of Rounds:
           span
             form
               select( id='pay_feedback', name='pay_feedback', data-role='slider')
                 option(value='yes') Yes 
                 option(value='no') No 
+        li % to Keep:
     a(href='#', data-role='button', data-icon='star') Next
   div(data-role='footer')
     h4 #{tm}
