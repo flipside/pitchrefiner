@@ -33,15 +33,22 @@
           dialog      = $('#dialog');
       
       if (!company || !offering || !audience || !problem || !sauce) {
-        console.log('company = ' + company);
-        console.log('offering = ' + offering);
-        console.log('audience = ' + audience);
-        console.log('problem = ' + problem);
-        console.log('not all fields are filled');
-        console.log('header = ' + dialog.find('#dailogHeader').text());
-        dialog.find('#dailogContent').text('Make sure all required fields are filled');
+        // console.log('company = ' + company);
+        // console.log('offering = ' + offering);
+        // console.log('audience = ' + audience);
+        // console.log('problem = ' + problem);
+        // console.log('not all fields are filled');
+        // console.log('header = ' + dialog.find('#dailogHeader').text());
+        dialog.find('#nextBtn').css('visibility', 'hidden');
+        dialog.find('#addAnotherBtn').css('visibility', 'hidden');
+        dialog.find('#dialogHeader').text('Something is missing!');
+        dialog.find('#dialogContent').text('Make sure all required fields are filled.');
       } else {
         // console.log('dialog header = ' + dialog.find('#dialogHeader').text());
+        // dialog.find('#nextBtn').show();
+        // dialog.find('#addAnotherBtn').show();
+        dialog.find('#nextBtn').css('visibility', 'visible');
+        dialog.find('#addAnotherBtn').css('visibility', 'visible');
         dialog.find('#dialogHeader').text('What do you want to do?');
         dialog.find('#dialogContent').text('My company, ' +
         company + ' is developing ' + offering + ' to help ' +
