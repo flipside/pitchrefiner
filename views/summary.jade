@@ -1,0 +1,37 @@
+div(id='#{page_id}', data-role='page', data-add-back-btn='true')
+  div(data-role='header')
+    h1 #{title}
+  div(data-role='content')
+    .config_list
+      h1 Summary
+      ul(data-role='listview', data-inset='true')
+        li 
+          p
+            h2.summary-head
+              | My company, XXX, 
+              | is developing A DEFINED OFFERING
+              | to help A TARGET AUDIENCE
+              | SOLVE A PROBLEM
+              | WITH SECRET SAUNCE
+        li Versions: 
+          span
+            form
+              select( id='invite_friends', name='invite_friends', data-role='slider')
+                option(value='yes') Yes 
+                option(value='no') No 
+        li Duration:
+          span
+            form
+              select( id='make_public', name='make_public', data-role='slider')
+                option(value='yes') Yes 
+                option(value='no') No 
+        li Number of Rounds:
+          span
+            form
+              select( id='pay_feedback', name='pay_feedback', data-role='slider')
+                option(value='yes') Yes 
+                option(value='no') No 
+        li % to Keep:
+    a(href='#', data-role='button', data-icon='star') Next
+  div(data-role='footer', data-position='fixed')
+    h4 #{tm}

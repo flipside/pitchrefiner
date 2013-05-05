@@ -4,7 +4,9 @@
  */
 
 var express = require('express')
-  , routes = require('./routes');
+  , routes = require('./routes') 
+  , Firebase = require('firebase') 
+  , myRootRef = new Firebase('https://pitchrefiner.firebaseio.com/');
 
 var app = module.exports = express.createServer();
 
@@ -35,6 +37,8 @@ app.get('/', routes.index);
 app.get('/create_or_rate', routes.createOrRate);
 app.get('/create', routes.create);
 app.get('/pitch_config', routes.pitchConfig);
+app.get('/config_audience', routes.configAudience);
+app.get('/summary', routes.summary);
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

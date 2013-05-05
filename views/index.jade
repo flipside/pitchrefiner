@@ -1,9 +1,9 @@
-div(id='home', data-role='page')
+div(id='#{page_id}', data-role='page')
   div(data-role='header')
     h1 #{title}
   div(data-role='content')
-    a(href='/create_or_rate', data-role='button', data-icon='star') Facebook
-    a(href='/create_or_rate', data-role='button', data-icon='star') Twitter
-  div(data-role='footer')
+    a(id='facebook_login', href='#', data-role='button', data-icon='star') Facebook
+    a(id='twitter_login', href='#', data-role='button', data-icon='star') Twitter
+  div(data-role='footer', data-position='fixed')
     h4 #{tm}
 
