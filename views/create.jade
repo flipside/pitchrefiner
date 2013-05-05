@@ -2,12 +2,27 @@ div(data-role='page', data-add-back-btn='true')
   div(data-role='header')
     h1 New
   div(data-role='content')
-    p
-      | My company, 
-      | (company name), is developing 
-      | (a defined offering) to help 
-      | (a target audience) 
-      | (solve a problem) 
-      | (with secret sauce).
+    p 
+      span My company, 
+      span
+        form
+          input(type='text', id='company_name', value='', placeholder='(company name)')
+      span
+        | , is developing 
+      span
+        form
+          input(for='offering', type='text', id='offering', value='', placeholder='(a defined offering)')
+      span
+        | to help 
+      span
+        form
+          input(for='audience', type='text', id='audience', value='', placeholder='(a target audience)')
+      span
+        form
+          input(for='problem', type='text', id='problem', value='', placeholder='solve a problem')
+      span
+        form
+          input(for='sauce', type='text', id='sauce', value='', placeholder='with secret sauce')
+    a(href='#', data-role='button', data-icon='star') Next
   div(data-role='footer')
     h4 #{tm}
