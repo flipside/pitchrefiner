@@ -5,24 +5,28 @@ div(id='#{page_id}', data-role='page', data-add-back-btn='true')
     p 
       span My company, 
       span
-        form
-          input(type='text', id='company_name', value='', placeholder='(company name)')
+        input(type='text', id='company_name', value='', placeholder='(company name)')
       span
         | , is developing 
       span
-        form
-          input(for='offering', type='text', id='offering', value='', placeholder='(a defined offering)')
+        input(type='text', id='offering', value='', placeholder='(a defined offering)')
       span
         | to help 
       span
-        form
-          input(for='audience', type='text', id='audience', value='', placeholder='(a target audience)')
+        input(type='text', id='audience', value='', placeholder='(a target audience)')
       span
-        form
-          input(for='problem', type='text', id='problem', value='', placeholder='solve a problem')
+        input(type='text', id='problem', value='', placeholder='solve a problem')
       span
-        form
-          input(for='sauce', type='text', id='sauce', value='', placeholder='with secret sauce')
-    a(href='/pitch_config', data-role='button', data-icon='star') Next
+        input(type='text', id='sauce', value='', placeholder='with secret sauce')
+    a(href='#', data-role='button', data-icon='star', id='createPitchBtn') Add
   div(data-role='footer', data-position='fixed')
     h4 #{tm}
+
+div(id='dialog', data-role='page', data-url='dialog.html')
+    div(data-role='header')
+        h1(id='dialogHeader') Info
+      div(data-role='content')
+        p(id='dialogContent') This is the pitch.
+      a(href='/pitch_config', data-role='button', data-icon='star') Next
+      a(href='#', data-role='button', data-rel='back', data-icon='star', id='addAnotherOne') Add Another Pitch
+
