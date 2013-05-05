@@ -3,8 +3,16 @@ div(id='#{page_id}', data-role='page', data-add-back-btn='true')
     h1 #{title}
   div(data-role='content')
     .config_list
-      h1 Audience
+      h1 Summary
       ul(data-role='listview', data-inset='true')
+        li 
+          p
+            h2.summary-head
+              | My company, XXX, 
+              | is developing A DEFINED OFFERING
+              | to help A TARGET AUDIENCE
+              | SOLVE A PROBLEM
+              | WITH SECRET SAUNCE
         li Invite Friends:
           span
             form
@@ -23,6 +31,6 @@ div(id='#{page_id}', data-role='page', data-add-back-btn='true')
               select( id='pay_feedback', name='pay_feedback', data-role='slider')
                 option(value='yes') Yes 
                 option(value='no') No 
-    a(href='/summary', data-role='button', data-icon='star') Next
+    a(href='#', data-role='button', data-icon='star') Next
   div(data-role='footer')
     h4 #{tm}
