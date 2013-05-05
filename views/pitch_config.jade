@@ -1,0 +1,39 @@
+div(id='pitch_config', data-role='page', data-add-back-btn='true')
+  div(data-role='header')
+    h1 #{title}
+  div(data-role='content')
+    .config_list
+      h1 Please set your configurations
+      ul(data-role='listview', data-inset='true')
+        li Versions:
+          span
+            form
+              div(data-role='rangeslider')
+                input(type='range', name='start_version', id='start_version', min='2', max='10', step='1', value='2');
+                input(type='range', name='end_version', id='end_version', min='2', max='10', step='1', value='10');
+        li Duration:
+          span
+            form
+              div(data-role='fieldcontain')
+                select( id='select-duration', name='select-duration', data-iconpos='left')
+                  option(value='1') 1 
+                  option(value='2') 2 
+                  option(value='3') 3
+                  option(value='4') 4
+                  option(value='5') 5
+        li Number of Rounds:
+          span
+            form
+              div(data-role='fieldcontain')
+                select( id='select-rounds', name='select-rounds', data-iconpos='left')
+                  option(value='1') 1
+                  option(value='2') 2
+                  option(value='3') 3
+                  option(value='4') 4
+                  option(value='5') 5
+        li % to keep:
+          span
+            input(type='range', name='percent_to_keep', id='percent_to_keep', min='10', max='100', step='1', value='20', data-highlight='true');
+    a(href='#', data-role='button', data-icon='star') Next
+  div(data-role='footer')
+    h4 #{tm}

@@ -1,4 +1,4 @@
-div(data-role='page', data-add-back-btn='true')
+div(id='create', data-role='page', data-add-back-btn='true')
   div(data-role='header')
     h1 New Pitch
   div(data-role='content')
@@ -23,6 +23,6 @@ div(data-role='page', data-add-back-btn='true')
       span
         form
           input(for='sauce', type='text', id='sauce', value='', placeholder='with secret sauce')
-    a(href='#', data-role='button', data-icon='star') Next
+    a(href='/pitch_config', data-role='button', data-icon='star') Next
   div(data-role='footer')
     h4 #{tm}

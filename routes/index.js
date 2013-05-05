@@ -20,5 +20,5 @@ exports.create = function(req, res){
 };
 
 exports.pitchConfig = function(req, res){
-  res.render('create', { title: company, tm: tm })
+  res.render('pitch_config', { title: company, tm: tm })
 };
