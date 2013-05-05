@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes') 
   , Firebase = require('firebase') 
-  , myRootRef = new Firebase('https://pitchrefiner.firebase.com/');
+  , myRootRef = new Firebase('https://pitchrefiner.firebaseio.com/');
 
 var app = module.exports = express.createServer();
 
